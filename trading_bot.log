@@ -1,0 +1,9 @@
+2026-02-19 23:45:08,599 | INFO | Connected to Binance Futures Testnet
+2026-02-19 23:45:08,600 | INFO | API Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-19 23:45:10,619 | INFO | API Response: {}
+2026-02-19 23:51:35,284 | INFO | Connected to Binance Futures Testnet
+2026-02-19 23:51:35,285 | INFO | API Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-19 23:51:37,065 | INFO | API Response: {}
+2026-02-19 23:51:49,081 | INFO | Connected to Binance Futures Testnet
+2026-02-19 23:51:49,081 | INFO | API Request: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 60000.0, 'timeInForce': 'GTC'}
+2026-02-19 23:51:50,625 | INFO | API Response: {}
