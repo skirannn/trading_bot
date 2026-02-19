@@ -5,8 +5,6 @@ from binance.client import Client
 
 load_dotenv()
 
-TESTNET_URL = "https://testnet.binancefuture.com"
-
 
 class BinanceClient:
     def __init__(self):
@@ -16,18 +14,23 @@ class BinanceClient:
         if not api_key or not api_secret:
             raise Exception("API keys missing in .env file")
 
+        # Correct Futures Testnet setup
         self.client = Client(api_key, api_secret)
-        self.client.FUTURES_URL = TESTNET_URL
+        self.client.API_URL = "https://testnet.binancefuture.com/fapi"
 
         logging.info("Connected to Binance Futures Testnet")
 
     def create_order(self, params):
         try:
             logging.info(f"API Request: {params}")
+
             response = self.client.futures_create_order(**params)
+
             logging.info(f"API Response: {response}")
+
             return response
 
         except Exception as e:
             logging.error(f"API Error: {e}")
             raise
+

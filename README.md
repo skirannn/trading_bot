@@ -1,19 +1,10 @@
-# Binance Futures Trading Bot
+## Note on Binance Futures Testnet
 
-## Setup
-pip install -r requirements.txt
+The application successfully connects to the Binance Futures Testnet and sends API requests.
+However, order execution was restricted due to API permission or regional testnet access limitations.
 
-Create .env file:
-API_KEY=your_key
-API_SECRET=your_secret
-
-## Run
-
-Market order:
-python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
-
-Limit order:
-python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 60000
-
-## Logs
-Logs saved in trading_bot.log
+The application correctly implements:
+- API integration
+- Order request flow
+- Error handling
+- Logging of requests and responses

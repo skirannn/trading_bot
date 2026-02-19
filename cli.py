@@ -2,7 +2,14 @@ import argparse
 from bot.logging_config import setup_logger
 from bot.client import BinanceClient
 from bot.orders import place_order
-from bot.validators import *
+from bot.validators import (
+    validate_symbol,
+    validate_side,
+    validate_order_type,
+    validate_quantity,
+    validate_price
+)
+
 
 def main():
     setup_logger()
@@ -35,19 +42,36 @@ def main():
         if price:
             print("Price:", price)
 
+        # Create Binance client
         client = BinanceClient()
 
+        # Place order
         order = place_order(
-            client, symbol, side, order_type, quantity, price
+            client,
+            symbol,
+            side,
+            order_type,
+            quantity,
+            price
         )
 
         print("\n=== Order Response ===")
-        print("Order ID:", order.get("orderId"))
-        print("Status:", order.get("status"))
-        print("Executed Qty:", order.get("executedQty"))
-        print("Avg Price:", order.get("avgPrice"))
 
-        print("\n✅ Order successful")
+        if order:
+            print("Full Binance Response:")
+            print(order)
+
+            print("\nParsed Details:")
+            print("Order ID:", order.get("orderId"))
+            print("Client Order ID:", order.get("clientOrderId"))
+            print("Status:", order.get("status"))
+            print("Symbol:", order.get("symbol"))
+            print("Side:", order.get("side"))
+            print("Type:", order.get("type"))
+            print("Executed Qty:", order.get("executedQty"))
+            print("Price:", order.get("price"))
+        else:
+            print("No response received")
 
     except Exception as e:
         print("\n❌ Error:", e)
@@ -55,3 +79,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

@@ -7,3 +7,27 @@
 2026-02-19 23:51:49,081 | INFO | Connected to Binance Futures Testnet
 2026-02-19 23:51:49,081 | INFO | API Request: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 60000.0, 'timeInForce': 'GTC'}
 2026-02-19 23:51:50,625 | INFO | API Response: {}
+2026-02-20 00:06:07,404 | INFO | Connected to Binance Futures Testnet
+2026-02-20 00:06:07,405 | INFO | API Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-20 00:06:09,021 | INFO | API Response: {}
+2026-02-20 00:06:13,419 | INFO | Connected to Binance Futures Testnet
+2026-02-20 00:06:13,419 | INFO | API Request: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 60000.0, 'timeInForce': 'GTC'}
+2026-02-20 00:06:14,682 | INFO | API Response: {}
+2026-02-20 00:08:46,386 | INFO | Connected to Binance Futures Testnet
+2026-02-20 00:08:46,386 | INFO | API Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-20 00:08:47,913 | INFO | API Response: {}
+2026-02-20 00:09:03,792 | INFO | Connected to Binance Futures Testnet
+2026-02-20 00:09:03,793 | INFO | API Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-20 00:09:05,125 | INFO | API Response: {}
+2026-02-20 00:16:10,223 | INFO | Connected to Binance Futures Testnet
+2026-02-20 00:16:10,224 | INFO | API Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-20 00:16:11,022 | ERROR | API Error: APIError(code=-2014): API-key format invalid.
+2026-02-20 00:47:12,224 | INFO | Connected to Binance Futures Testnet
+2026-02-20 00:47:12,225 | INFO | API Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-20 00:47:12,973 | ERROR | API Error: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-02-20 01:01:19,474 | INFO | Connected to Binance Futures Testnet
+2026-02-20 01:01:19,474 | INFO | API Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-20 01:01:20,293 | ERROR | API Error: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-02-20 01:10:41,192 | INFO | Connected to Binance Futures Testnet
+2026-02-20 01:10:41,192 | INFO | API Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-20 01:10:41,956 | ERROR | API Error: APIError(code=-2015): Invalid API-key, IP, or permissions for action
